@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS.PagePrincipal" Title="Prontuário Médico">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="Bem-Vindo!" FontSize="Title" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Exame Clínico Ocupacional" FontSize="Title" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+            
+            <Label Text="Nome:" FontSize="20"/>
+            <Entry x:Name="txtNome" Placeholder="Digite Seu Nome"/>
+            <Label Text="CPF:" FontSize="20"/>
+            <Entry x:Name="txtCPF" Placeholder="Digite Seu CPF" Keyboard="Numeric"/>
+            <Label Text="Endereço:" FontSize="20"/>
+            <Entry x:Name="txtEndereco" Placeholder="Digite Seu Endereço"/>
+            <Label Text="Cidade:" FontSize="20"/>
+            <Entry x:Name="txtCidade" Placeholder="Digite Seu Cidade"/>
+            <Label Text="Selecione uma opção :"/>
+            <RadioButton x:Name="rdAdimissional" Content="Adimissional" GroupName="group1"  />
+            <RadioButton x:Name="rdPeriodico" Content="Periódico" GroupName="group2" />
+            <RadioButton x:Name="rdMudanca" Content="Mudança de Função" GroupName="group3" />
+            <RadioButton x:Name="rdRetorno" Content="Retorno ao Trabalho" GroupName="group4" />
+            <StackLayout Orientation="Horizontal">
+
+                <Button x:Name="btnContinuar" Text="Continuar" Clicked="btnContinuar_Clicked" />
+                <Button x:Name="btnSair" Text="Sair" Clicked="btnSair_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

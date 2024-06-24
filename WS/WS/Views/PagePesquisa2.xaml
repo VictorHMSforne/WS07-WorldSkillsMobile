@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS.Views.PagePesquisa2"
+             Title="História Clínica Pregressa">
+
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Doenças Infecciosas?" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="rdDoenS" Content="Sim"/>
+                <RadioButton x:Name="rdDoenN" Content="Não"/>
+            </StackLayout>
+            <Label x:Name="lblDoen" Text="Se sim Quais?" />
+            <Entry x:Name="txtDoen"/>
+
+            <Label Text="Alergias?" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="rdAlerS" Content="Sim" />
+                <RadioButton x:Name="rdAlerN" Content="Não"/>
+            </StackLayout>
+            <Label x:Name="lblAler" Text="Se sim Quais?"/>
+            <Entry x:Name="txtAler"/>
+
+            <Label Text="Cirurgias?" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="rdCirurS" Content="Sim" />
+                <RadioButton x:Name="rdCirurN" Content="Não"/>
+            </StackLayout>
+            <Label x:Name="lblCirur" Text="Se sim Quais?"/>
+            <Entry x:Name="txtCirur"/>
+
+            <Label Text="Transfusão de Sangue?" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="rdTransS" Content="Sim" />
+                <RadioButton x:Name="rdTransN" Content="Não"/>
+            </StackLayout>
+            <Label x:Name="lblTrans" Text="Se sim Quais?"/>
+            <Entry x:Name="txtTrans"/>
+
+            <Label Text="Medicamentos de Uso Contínuo?" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton x:Name="rdMediS" Content="Sim" />
+                <RadioButton x:Name="rdMediN" Content="Não"/>
+            </StackLayout>
+                <Label x:Name="lblMedi" Text="Se sim Quais?"/>
+            <Entry x:Name="txtMedi"/>
+
+            <Label Text="Outros:" FontAttributes="Bold"/>
+            <Entry x:Name="txtOutros"/>
+            <StackLayout Orientation="Horizontal">
+
+                <Button x:Name="btnContinuar" Text="Continuar" Clicked="btnContinuar_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
